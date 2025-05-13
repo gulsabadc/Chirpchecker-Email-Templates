@@ -1,0 +1,182 @@
+<!-- Banner: welcome-banner.png -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChirpChecker Verification Code</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background: #f4faff;
+      font-family: 'Inter', Arial, sans-serif;
+      color: #1d203e;
+      letter-spacing: -2%;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="background: #f4faff"
+    >
+      <tr>
+        <td align="center">
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              max-width: 480px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px #1d203e14;
+              margin: 32px 0;
+            "
+          >
+            <!-- Shared Header -->
+            <tr>
+              <td style="padding: 0">
+                <img
+                  src="images/welcome-banner.png"
+                  alt="{{banner-alt}}"
+                  style="
+                    width: 100%;
+                    border-radius: 8px 8px 0 0;
+                    display: block;
+                  "
+                />
+              </td>
+            </tr>
+            <!-- {% include "shared/header.html" with banner_image="welcome-banner.png" banner_alt="Welcome to ChirpChecker!" %} -->
+            <tr>
+              <td style="padding: 32px 24px 16px 24px">
+                <h2
+                  style="
+                    margin: 0 0 16px 0;
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #1d203e;
+                  "
+                >
+                  Your ChirpChecker Verification Code
+                </h2>
+                <p style="margin: 0 0 24px 0; font-size: 15px; color: #1d203e">
+                  Thank you for signing up with ChirpChecker. To complete your
+                  registration, please enter the verification code below:
+                </p>
+                <div
+                  style="
+                    font-size: 32px;
+                    font-weight: 700;
+                    letter-spacing: 6px;
+                    color: #1d203e;
+                    background: #f6f6f6;
+                    border-radius: 6px;
+                    border: 1px dashed #9a9a9a;
+                    padding: 16px 0;
+                    text-align: center;
+                    margin-bottom: 24px;
+                  "
+                >
+                  {{code}}
+                </div>
+                <p style="margin: 0 0 8px 0; font-size: 14px; color: #1d203e">
+                  This code is valid for the next 1 hour. Please enter it in the
+                  required field on the sign-up page to complete your
+                  registration.
+                </p>
+                <br />
+                <p style="margin: 0 0 0 0; font-size: 14px; color: #1d203e">
+                  If you did not request this code, please ignore this email.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0 24px 24px 24px">
+                <br />
+
+                <p style="margin: 0 0 8px 0; font-size: 14px; color: #1d203e">
+                  Need help? Email us at
+                  <a
+                    href="mailto:hello@chirpchecker.com"
+                    style="
+                      color: #0070e8;
+                      font-weight: 600;
+                      text-decoration: none;
+                    "
+                    >hello@chirpchecker.com</a
+                  >. Thanks for joining the movement to make the internet a
+                  little more truthful.
+                </p>
+                <br />
+                <hr style="border: 0.5px solid rgba(0, 0, 0, 0.1)" />
+
+                <p style="margin: 24px 0 0 0; font-size: 14px; color: #1d203e">
+                  Best Regards,<br />— The ChirpChecker Team
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  background: #f8f8f8;
+                  border-radius: 0 0 8px 8px;
+                  padding: 16px 24px;
+                  font-size: 12px;
+                  color: #66605e;
+                "
+              >
+                <div style="margin-bottom: 8px; color: rgba(29, 32, 62, 0.5)">
+                  © 2024 ChirpChecker. All Rights Reserved
+                </div>
+                <br />
+                <div style="margin-bottom: 8px; color: rgba(29, 32, 62, 0.5)">
+                  2907 Dauphine Street, Suite C
+                </div>
+                <br />
+                <div>
+                  <a
+                    href="#"
+                    style="
+                      color: rgba(29, 32, 62, 0.5);
+                      text-decoration: none;
+                      margin-right: 18px;
+                    "
+                    >Privacy Policy</a
+                  >
+                  <a
+                    href="#"
+                    style="
+                      color: rgba(29, 32, 62, 0.5);
+                      text-decoration: none;
+                      margin-right: 18px;
+                    "
+                    >Get Help</a
+                  >
+                  <a
+                    href="#"
+                    style="
+                      color: rgba(29, 32, 62, 0.5);
+                      text-decoration: none;
+                      margin: 0 8px;
+                    "
+                    >Web Version</a
+                  >
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
