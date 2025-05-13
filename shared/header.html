@@ -1,6 +1,88 @@
-<!-- Shared Header -->
-<tr>
-  <td style="padding:0;">
-    <img src="cid:{{banner-image}}" alt="{{banner-alt}}" style="width:100%; border-radius:8px 8px 0 0; display:block;">
-  </td>
-</tr> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ email_title|default:"ChirpChecker" }}</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background: #f4faff;
+      font-family: 'Inter', Arial, sans-serif;
+      color: #1d203e;
+      letter-spacing: -2%;
+      line-height: 26px;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="background: #f4faff"
+    >
+      <tr>
+        <td align="center">
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="
+              max-width: 480px;
+              background: #fff;
+              border-radius: 8px;
+              box-shadow: 0 2px 8px #1d203e14;
+              margin: 32px 0;
+            "
+          >
+            <!-- Logo -->
+            <tr>
+              <td align="center" style="padding: 8px 0px 8px 0px">
+                <img
+                  src="{{ logo_src }}"
+                  alt="{{ logo_alt }}"
+                  style="
+                    display: block;
+                    max-width: 64px;
+                    max-height: 64px;
+                    height: auto;
+                    border-radius: 50%;
+                  "
+                />
+              </td>
+            </tr>
+            <!-- Banner -->
+            <tr>
+              <td>
+                <table width="100%">
+                  <tr>
+                    <td align="center">
+                      <img
+                        src="{{ banner_src }}"
+                        alt="{{ banner_alt }}"
+                        style="
+                          display: block;
+                          width: 100%;
+                          max-width: 432px;
+                          border-radius: 10px;
+                        "
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Your content starts after this -->
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

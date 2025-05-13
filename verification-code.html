@@ -19,7 +19,6 @@
       color: #1d203e;
       letter-spacing: -2%;
       line-height: 26px;
-      paragraph-spacing: 18px;
     "
   >
     <table
@@ -44,21 +43,44 @@
               margin: 32px 0;
             "
           >
-            <!-- Shared Header -->
+            <!-- Logo part  -->
             <tr>
-              <td style="padding: 0">
+              <td align="center" style="padding: 8px 0px 8px 0px">
                 <img
-                  src="images/welcome-banner.png"
-                  alt="{{banner-alt}}"
+                  src="images/logo.png"
+                  alt="ChirpChecker Logo"
                   style="
-                    width: 100%;
-                    border-radius: 8px 8px 0 0;
                     display: block;
+                    max-width: 64px;
+                    max-height: 64px;
+                    height: auto;
                   "
                 />
               </td>
             </tr>
-            <!-- {% include "shared/header.html" with banner_image="welcome-banner.png" banner_alt="Welcome to ChirpChecker!" %} -->
+            <!-- Banner part  -->
+            <tr>
+              <td align="center">
+                <img
+                  src="images/welcome-banner.png"
+                  alt="{{banner-alt}}"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 432px;
+                    border-radius: 10px;
+                  "
+                />
+              </td>
+            </tr>
+                  <!-- {% include "shared/header.html" with
+          email_title="ChirpChecker Verification Code"
+          logo_src="images/logo.png"
+          logo_alt="ChirpChecker Logo"
+          banner_src="images/welcome-banner.png"
+          banner_alt="Welcome to ChirpChecker!"
+      %} -->
+            <!-- Content part  -->
             <tr>
               <td style="padding: 32px 24px 16px 24px">
                 <h2
@@ -127,13 +149,15 @@
                 </p>
               </td>
             </tr>
+
+            <!-- {% include "shared/footer.html" with year=2024 %} -->
             <!-- Spacer for margin above the footer box -->
             <tr>
               <td height="24" style="line-height: 18px; font-size: 1px">
                 &nbsp;
               </td>
             </tr>
-            <!-- Footer box -->
+            <!-- Footer part  -->
             <tr>
               <td align="center">
                 <table
