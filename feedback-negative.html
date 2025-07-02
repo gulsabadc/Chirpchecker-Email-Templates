@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trouble Logging In? | AmICredible</title>
+    <title>We Hear You | AmICredible</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
@@ -44,7 +44,7 @@
           >
             <!-- Logo -->
             <tr>
-              <td align="center" style="padding: 8px 0px 8px 0px">
+              <td align="center" style="padding: 18px 0px 8px 0px">
                 <img
                   src="images/logo.png"
                   alt="AmICredible Logo"
@@ -62,8 +62,8 @@
             <tr>
               <td align="center">
                 <img
-                  src="images/trouble-logging-banner.png"
-                  alt="Trouble Logging In Banner"
+                  src="images/negative-feedback-banner.png"
+                  alt="Negative Feedback Banner"
                   style="
                     display: block;
                     width: 100%;
@@ -78,7 +78,7 @@
               <td style="padding: 32px 24px 0 24px">
                 <h2
                   style="
-                    margin: 0 0 16px 0;
+                    margin: 0 0 20px 0;
                     font-size: 22px;
                     font-weight: 700;
                     color: #1d203e;
@@ -86,115 +86,48 @@
                 >
                   Hi {{username}},
                 </h2>
-                <p style="margin: 0 0 16px 0; font-size: 15px; color: #1d203e">
-                  We noticed you might be having trouble logging into your
-                  AmICredible account. Don't worry – we're here to help you get
-                  back on track in seconds.
+                <p style="margin: 0 0 16px 0; font-size: 16px; color: #1d203e">
+                  Thank you for sharing your feedback with us. We're sorry to
+                  hear that your experience hasn't met your expectations.
                 </p>
-                <div style="margin: 24px 0 24px 0">
-                  <table
-                    width="100%"
-                    cellpadding="0"
-                    cellspacing="0"
-                    border="0"
-                    style="border-radius: 6px"
-                  >
-                    <tr>
-                      <td
-                        style="
-                          font-size: 20px;
-                          font-weight: 700;
-                          color: #1d203e;
-                          margin-bottom: 16px;
-                        "
-                      >
-                        <b>🔑 Here's How to Get Back In</b>
-                        <div
-                          style="
-                            background: #fffbe6;
-                            border: 1px solid #ffc851;
-                            margin: 16px 0 16px 0;
-                            padding: 16px;
-                            border-radius: 4px;
-                          "
-                        >
-                          <ul
-                            style="
-                              margin: 12px 0 0 18px;
-                              padding: 0;
-                              font-size: 15px;
-                              color: #1d203e;
-                              font-weight: 500;
-                            "
-                          >
-                            <li>
-                              Use our
-                              <a
-                                href="{{reset-link}}"
-                                style="
-                                  color: #0070e8;
-                                  font-weight: 700;
-                                  text-decoration: none;
-                                "
-                                >password reset link</a
-                              >
-                              to set a new password
-                            </li>
-                            <li>
-                              Make sure you're logging in with the email you
-                              signed up with
-                            </li>
-                            <li>
-                              Still stuck? Contact our support team anytime
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
-              </td>
-            </tr>
-            <!-- Check Smarter Section -->
-            <tr>
-              <td style="padding: 0 24px 0 24px">
-                <div
-                  style="
-                    background: #f4faff;
-                    border-radius: 8px;
-                    text-align: center;
-                    margin-bottom: 16px;
-                  "
-                >
-                  <img
-                    src="images/check-smarter.png"
-                    alt="Check Smarter"
-                    style="width: 100%; border-radius: 8px; margin-bottom: 16px"
-                  />
-                </div>
-                <div style="text-align: center; margin-bottom: 18px">
-                  <a
-                    href="#"
+                <p style="margin: 0 0 24px 0; font-size: 16px; color: #1d203e">
+                  We'd appreciate the opportunity to discuss your concerns in
+                  more detail. If you're open to it, please let us know a
+                  convenient time for a call, or use the link below to schedule:
+                </p>
+                <div style="margin: 0 0 24px 0">
+                  <div
                     style="
-                      display: inline-block;
-                      width: 85%;
-                      background: #204618;
-                      color: #fff;
-                      font-weight: 600;
-                      text-decoration: none;
-                      padding: 12px 32px;
-                      border-radius: 6px;
-                      font-size: 15px;
-                      margin: 16px 0 0 0;
-                      font-family: 'Inter', Arial, sans-serif;
+                      font-size: 16px;
+                      font-weight: 700;
+                      color: #1d203e;
+                      margin-bottom: 8px;
                     "
                   >
-                    Log In
-                  </a>
+                    📅 Schedule a Time That Works for You:
+                  </div>
+                  <div style="text-align: center">
+                    <a
+                      href="{{schedule-link}}"
+                      style="
+                        width: 100%;
+                        background: #204618;
+                        color: #fff;
+                        font-weight: 600;
+                        text-decoration: none;
+                        padding: 14px 0;
+                        border-radius: 6px;
+                        font-size: 16px;
+                        margin: 10px 0 0 0;
+                        font-family: 'Inter', Arial, sans-serif;
+                        display: inline-block;
+                      "
+                      >Book a 15-Minute Call</a
+                    >
+                  </div>
                 </div>
               </td>
             </tr>
-
             <tr>
               <td style="padding: 0px 24px 0 24px">
                 <hr style="border: 1px solid rgba(0, 0, 0, 0.1)" />
@@ -206,8 +139,6 @@
             <!-- Footer -->
             <tr>
               <td>
-                <!-- {% include 'shared/footer.html' %} -->
-                <!-- Footer copied for standalone HTML -->
                 <table
                   width="90%"
                   cellpadding="0"
@@ -271,7 +202,7 @@
               <td height="24" style="line-height: 24px; font-size: 1px">
                 &nbsp;
               </td>
-            </tr> 
+            </tr>
           </table>
         </td>
       </tr>
