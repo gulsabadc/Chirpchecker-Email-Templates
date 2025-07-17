@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment Confirmed | AmICredible</title>
+    <title>Payment Failed | AmICredible</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
@@ -35,7 +35,7 @@
             cellspacing="0"
             border="0"
             style="
-              max-width: 480px;
+              max-width: 580px;
               background: #fff;
               border-radius: 8px;
               box-shadow: 0 2px 8px #1d203e14;
@@ -44,7 +44,7 @@
           >
             <!-- Logo -->
             <tr>
-              <td align="center" style="padding: 18px 0px 8px 0px">
+              <td align="center" style="padding: 8px 0px 8px 0px">
                 <img
                   src="images/logo.png"
                   alt="AmICredible Logo"
@@ -53,7 +53,6 @@
                     max-width: 64px;
                     max-height: 64px;
                     height: auto;
-                    margin: 10px;
                   "
                 />
               </td>
@@ -62,12 +61,12 @@
             <tr>
               <td align="center" style="padding: 0 0 0 0">
                 <img
-                  src="images/payment-success-banner.png"
-                  alt="You're In, Payment Confirmed!"
+                  src="images/payment-failed-banner.png"
+                  alt="We Couldn't Process Your Payment"
                   style="
                     display: block;
                     width: 100%;
-                    max-width: 432px;
+                    max-width: 532px;
                     border-radius: 10px;
                   "
                 />
@@ -94,66 +93,83 @@
                     font-weight: 500;
                   "
                 >
-                  Welcome aboard – and thanks for subscribing to AmICredible
-                  Premium!<br /><br />Your payment was processed successfully,
-                  and your account now has access to all premium features,
-                  including:
-                </p> 
-                <div
+                  We tried to process your payment for AmICredible Premium, but
+                  it didn't go through.
+                </p>
+                <p
                   style="
-                    background: #fff9e666;
-                    border: 1px solid #ffc851;
-                    border-radius: 4px;
-                    padding: 18px 18px 18px 18px;
-                    font-size: 15px;
+                    margin: 0 0 24px 0;
+                    font-size: 16px;
                     color: #1d203e;
-                    margin-bottom: 24px;
+                    font-weight: 500;
                   "
                 >
-                  <ul
+                  No worries - this happens sometimes. You can retry your
+                  payment now to continue accessing all premium features without
+                  interruption.
+                </p>
+
+                <!-- What You Can Do Section -->
+                <div style="margin-bottom: 24px">
+                  <div
                     style="
-                      margin: 0 0 0 18px;
-                      padding: 0;
+                      font-size: 18px;
+                      font-weight: 700;
+                      color: #1d203e;
+                      margin-bottom: 12px;
+                    "
+                  >
+                    ▬ What You Can Do:
+                  </div>
+                  <div
+                    style="
+                      background: #fff9e666;
+                      border: 1px solid #ffc851;
+                      border-radius: 4px;
+                      padding: 18px 18px 18px 18px;
                       font-size: 15px;
                       color: #1d203e;
                     "
                   >
-                    <li>Deep Check for advanced credibility analysis</li>
-                    <li>Full history of past checks</li>
-                    <li>Leaderboard ranking and</li>
-                    <li>Browser plugin + mobile voice features</li>
-                    <li>Priority updates and early feature access</li>
-                  </ul>
+                    <ul
+                      style="
+                        margin: 0 0 0 18px;
+                        padding: 0;
+                        font-size: 15px;
+                        color: #1d203e;
+                      "
+                    >
+                      <li style="margin-bottom: 8px">
+                        Double-check your card details or expiration date
+                      </li>
+                      <li style="margin-bottom: 8px">
+                        Try a different card or payment method
+                      </li>
+                      <li>Retry the payment securely through the link below</li>
+                    </ul>
+                  </div>
                 </div>
-                <div
-                  style="
-                    background: #f4f8ff;
-                    border-radius: 10px;
-                    padding: 24px 0 0 0;
-                    text-align: center;
-                    margin-bottom: 24px;
-                  "
-                >
-                 
-                  <img
-                    src="images/payment-premium.png"
-                    alt="Premium Crown"
-                    style="width: 100%; max-width: 100%; margin: 16px 0 0 0"
-                  />
-                </div>
-                <p style="margin: 0 0 0 0; font-size: 15px; color: #1d203e">
-                  Your subscription details and billing info are available
-                  anytime in your
+
+                <!-- Retry Payment Button -->
+                <div style="text-align: center; margin-bottom: 24px">
                   <a
-                    href="{{account-settings-link}}"
+                    href="{{retry-payment-link}}"
                     style="
-                      color: #0070e8;
-                      font-weight: 700;
+                      width: 100%;
+                      background: #204618;
+                      color: #fff;
+                      font-weight: 600;
                       text-decoration: none;
+                      padding: 14px 0;
+                      border-radius: 6px;
+                      font-size: 16px;
+                      margin: 10px 0 0 0;
+                      font-family: 'Inter', Arial, sans-serif;
+                      display: inline-block;
                     "
-                    >Account Settings</a
-                  >.
-                </p>
+                    >Retry Payment Now</a
+                  >
+                </div>
               </td>
             </tr>
             <tr>
@@ -189,7 +205,7 @@
                       <div
                         style="margin-bottom: 8px; color: rgba(29, 32, 62, 0.5)"
                       >
-                        2607 Dauphin Street, Suite C
+                        2807 Dauphin Street, Suite C
                       </div>
                       <div>
                         <a
