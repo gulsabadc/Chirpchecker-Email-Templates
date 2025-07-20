@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subscription Renewed | AmICredible</title>
+    <title>Subscription Renewal Failed | AmICredible</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
@@ -17,7 +17,7 @@
       font-family: 'Inter', Arial, sans-serif;
       color: #1d203e;
       letter-spacing: -2%;
-      line-height: 26px; 
+      line-height: 26px;
     "
   >
     <table
@@ -61,8 +61,8 @@
             <tr>
               <td align="center" style="padding: 0 0 0 0">
                 <img
-                  src="images/renew-success-banner.png"
-                  alt="Your Plan Renewed Successfully"
+                  src="images/renewal-failed-banner.png"
+                  alt="We Couldn't Renew- Your Subscription"
                   style="
                     display: block;
                     width: 100%;
@@ -87,21 +87,58 @@
                 </h2>
                 <p
                   style="
-                    margin: 0 0 24px 0;
+                    margin: 0 0 16px 0;
                     font-size: 16px;
                     color: #1d203e;
                     font-weight: 500;
                   "
                 >
-                  We've processed your payment and your subscription has been
-                  renewed successfully.
+                  We were unable to process your subscription renewal due to a
+                  declined payment. Please update your billing information to
+                  avoid any interruption in service.
+                </p>
+                <p
+                  style="
+                    margin: 0 0 5px 0;
+                    font-size: 20px;
+                    color: #1d203e;
+                    font-weight: 700;
+                  "
+                >
+                  You can update your payment details here:
                 </p>
 
-                <!-- Your Plan Has Been Renewed Section -->
+                <!-- Retry Payment Button -->
+                <div style="text-align: center; margin-bottom: 24px">
+                  <a
+                    href="{{retry-payment-link}}"
+                    style="
+                      width: 100%;
+                      background: #2A5B20;
+                      color: #fff;
+                      font-weight: 600;
+                      text-decoration: none;
+                      padding: 14px 0;
+                      border-radius: 6px;
+                      font-size: 16px;
+                      margin: 10px 0 0 0;
+                      font-family: 'Inter', Arial, sans-serif;
+                      display: inline-block;
+                    "
+                    >Retry Payment Now</a
+                  >
+                </div>
+
+                <p style="margin: 0 0 24px 0; font-size: 16px; color: #1d203e">
+                  You can manage your billing preferences or cancel future
+                  renewals anytime through your account.
+                </p>
+
+                <!-- Your Payment Didn't Go Through Section -->
                 <div style="margin-bottom: 24px">
                   <img
-                    src="images/renew_success.png"
-                    alt="Your Plan Has Been Renewed - No Interruptions, Full Access"
+                    src="images/payment-failed-illustration.png"
+                    alt="Your Payment Didn't Go Through - Let's Fix It So You Don't Lose Access"
                     style="width: 100%; max-width: 100%; border-radius: 8px"
                   />
                 </div>

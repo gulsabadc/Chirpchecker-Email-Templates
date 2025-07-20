@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subscription Renewed | AmICredible</title>
+    <title>Payment Card Expired | AmICredible</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
@@ -17,7 +17,7 @@
       font-family: 'Inter', Arial, sans-serif;
       color: #1d203e;
       letter-spacing: -2%;
-      line-height: 26px; 
+      line-height: 26px;
     "
   >
     <table
@@ -61,8 +61,8 @@
             <tr>
               <td align="center" style="padding: 0 0 0 0">
                 <img
-                  src="images/renew-success-banner.png"
-                  alt="Your Plan Renewed Successfully"
+                  src="images/card-expired-banner.png"
+                  alt="Your Payment Card Has Expired"
                   style="
                     display: block;
                     width: 100%;
@@ -87,21 +87,53 @@
                 </h2>
                 <p
                   style="
-                    margin: 0 0 24px 0;
+                    margin: 0 0 16px 0;
                     font-size: 16px;
                     color: #1d203e;
                     font-weight: 500;
                   "
                 >
-                  We've processed your payment and your subscription has been
-                  renewed successfully.
+                  Your payment card on file with us has expired. To continue
+                  your service without interruption, please update your billing
+                  information as soon as possible.
+                </p>
+                <p
+                  style="
+                    margin: 40px 0 5px 0;
+                    font-size: 20px;
+                    color: #1d203e;
+                    font-weight: 700;
+                  "
+                >
+                  Update your payment details here:
                 </p>
 
-                <!-- Your Plan Has Been Renewed Section -->
+                <!-- Retry Payment Button -->
+                <div style="text-align: center; margin-bottom: 24px">
+                  <a
+                    href="{{update-payment-link}}"
+                    style="
+                      width: 100%;
+                      background: #2a5b20;
+                      color: #fff;
+                      font-weight: 600;
+                      text-decoration: none;
+                      padding: 14px 0;
+                      border-radius: 6px;
+                      font-size: 16px;
+                      margin: 10px 0 0 0;
+                      font-family: 'Inter', Arial, sans-serif;
+                      display: inline-block;
+                    "
+                    >Retry Payment Now</a
+                  >
+                </div>
+
+                <!-- Update Your Billing Info Now Section -->
                 <div style="margin-bottom: 24px">
                   <img
-                    src="images/renew_success.png"
-                    alt="Your Plan Has Been Renewed - No Interruptions, Full Access"
+                    src="images/update-billing-illustration.png"
+                    alt="Update Your Billing Info Now To Avoid Service Interruptions"
                     style="width: 100%; max-width: 100%; border-radius: 8px"
                   />
                 </div>
