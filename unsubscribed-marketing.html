@@ -3,110 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unsubscribed from Marketing Emails | AmICredible</title>
+    <title>Welcome to MVP | AmICredible</title>
     <link
       href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body
-    style="
-      margin: 0;
-      padding: 0;
-      background: #f4faff;
-      font-family: 'Inter', Arial, sans-serif;
-      color: #1d203e;
-      letter-spacing: -2%;
-      line-height: 26px;
-    "
-  >
-    <table
-      width="100%"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-      style="background: #f4faff"
-    >
+  <body style="margin: 0; padding: 0; background: #f4faff; font-family: 'Inter', Arial, sans-serif; color: #1d203e; letter-spacing: -2%; line-height: 26px;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #f4faff">
       <tr>
         <td align="center">
-          <table
-            width="100%"
-            cellpadding="0"
-            cellspacing="0"
-            border="0"
-            style="
-              max-width: 560px;
-              background: #fff;
-              border-radius: 8px;
-              box-shadow: 0 2px 8px #1d203e14;
-              margin: 32px 0;
-            "
-          >
-            <!-- Logo -->
-            <tr>
-              <td align="center" style="padding: 8px 0px 8px 0px">
-                <img
-                  src="images/logo.png"
-                  alt="AmICredible Logo"
-                  style="
-                    display: block;
-                    max-width: 64px;
-                    max-height: 64px;
-                    height: auto;
-                  "
-                />
-              </td>
-            </tr>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 580px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #1d203e14; margin: 32px 0;">
+            <!-- Header -->
+            {% include 'shared/header.html' %}
             <!-- Banner -->
             <tr>
               <td align="center" style="padding: 0 0 0 0">
                 <img
-                  src="images/unsubscribed-marketing-banner.png"
-                  alt="You've Been Unsubscribed from Marketing Emails"
-                  style="
-                    display: block;
-                    width: 100%;
-                    max-width: 512px;
-                    border-radius: 10px;
-                  "
+                  src="{% static 'images/mvp_banner.png' %}"
+                  alt="Welcome to MVP"
+                  style="display: block; width: 100%; max-width: 532px; border-radius: 10px;"
                 />
               </td>
             </tr>
             <!-- Content -->
             <tr>
               <td style="padding: 32px 24px 0 24px">
-                <h2
-                  style="
-                    margin: 0 0 16px 0;
-                    font-size: 22px;
-                    font-weight: 700;
-                    color: #1d203e;
-                  "
-                >
-                  Hi {{username}},
+                <h2 style="margin: 0 0 16px 0; font-size: 22px; font-weight: 700; color: #1d203e;">
+                  Hi {{ username }},
                 </h2>
-                <p
-                  style="
-                    margin: 0 0 16px 0;
-                    font-size: 16px;
-                    color: #1d203e;
-                    font-weight: 500;
-                  "
-                >
-                  You have successfully unsubscribed from our marketing emails.
-                  You will no longer receive promotional messages from us.
+                <p style="margin: 0 0 16px 0; font-size: 16px; color: #1d203e; font-weight: 500;">
+                  We’re thrilled to welcome you to AmICredible MVP – where powerful tools meet clarity, credibility, and control.
                 </p>
-                <p
-                  style="
-                    margin: 0 0 24px 0;
-                    font-size: 16px;
-                    color: #1d203e;
-                    font-weight: 500;
-                  "
-                >
-                  If this was a mistake or you wish to resubscribe in the
-                  future, you can update your preferences at any time.
+                <p style="margin: 0 0 24px 0; font-size: 16px; color: #1d203e; font-weight: 500;">
+                  Your upgrade unlocks a set of advanced features designed to help you dig deeper and share smarter.
                 </p>
+                <!-- Premium Features Section -->
+                <div style="margin-bottom: 24px">
+                  <div style="font-size: 20px; font-weight: 700; color: #1d203e; margin-bottom: 12px;">
+                    🚀 Your Premium Features Include:
+                  </div>
+                  <div style="background: #fff9e666; border: 1px solid #ffc851; border-radius: 6px; padding: 26px 14px 26px 26px; font-size: 15px; color: #1d203e;">
+                    <ul style="margin: 0 0 0 18px; padding: 0; font-size: 16px; color: #1d203e;">
+                      <li style="margin-bottom: 8px"><strong>Deep Check</strong> – Get richer, more accurate credibility analysis</li>
+                      <li style="margin-bottom: 8px"><strong>Full History</strong> – View, filter, and organize all your past chirps</li>
+                      <li style="margin-bottom: 8px"><strong>Leaderboard</strong> – See how your credibility compares to others</li>
+                      <li style="margin-bottom: 8px"><strong>Challenge Analysis</strong> – Disagree with a verdict? Challenge it</li>
+                      <li style="margin-bottom: 8px"><strong>Mobile Features</strong> – Use voice-to-text and text-to-voice on the go</li>
+                      <li><strong>Browser Plugin</strong> – Fact-check content directly from your browser</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Access Confirmation Section -->
+                <div style="border-radius: 10px; padding: 24px 0 0 0; text-align: center; margin-bottom: 24px;">
+                  <img
+                    src="{% static 'images/mvp_premium.png' %}"
+                    alt="Premium Crown"
+                    style="width: 100%; max-width: 100%; margin: 0 0 0 0"
+                  />
+                </div>
+                <!-- Next Step Section -->
+                <div style="margin-bottom: 24px">
+                  <div style="font-size: 20px; font-weight: 700; color: #1d203e; margin-bottom: 8px;">
+                    🚀 Next Step: Start Exploring
+                  </div>
+                  <p style="margin: 0 0 16px 0; font-size: 16px; color: #1d203e">
+                    Jump into your dashboard and try a Deep Check today:
+                  </p>
+                  <div style="text-align: center">
+                    {% include 'shared/button.html' with url=dashboard_link text='Go to Dashboard' %}
+                  </div>
+                </div>
               </td>
             </tr>
             <tr>
@@ -118,66 +85,7 @@
               </td>
             </tr>
             <!-- Footer -->
-            <tr>
-              <td>
-                <table
-                  width="90%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                  style="
-                    background: #f8f8f8;
-                    border-radius: 8px;
-                    padding: 0;
-                    margin: 24px auto 0 auto;
-                  "
-                >
-                  <tr>
-                    <td style="padding: 24px; font-size: 12px; color: #66605e">
-                      <div
-                        style="margin-bottom: 8px; color: rgba(29, 32, 62, 0.5)"
-                      >
-                        © 2025 AmICredible. All Rights Reserved
-                      </div>
-                      <div
-                        style="margin-bottom: 8px; color: rgba(29, 32, 62, 0.5)"
-                      >
-                        2007 Dauphin Street, Suite C
-                      </div>
-                      <div>
-                        <a
-                          href="#"
-                          style="
-                            color: rgba(29, 32, 62, 0.5);
-                            text-decoration: none;
-                            margin-right: 18px;
-                          "
-                          >Privacy Policy</a
-                        >
-                        <a
-                          href="#"
-                          style="
-                            color: rgba(29, 32, 62, 0.5);
-                            text-decoration: none;
-                            margin-right: 18px;
-                          "
-                          >Get Help</a
-                        >
-                        <a
-                          href="#"
-                          style="
-                            color: rgba(29, 32, 62, 0.5);
-                            text-decoration: none;
-                            margin: 0 8px;
-                          "
-                          >Web Version</a
-                        >
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+            {% include 'shared/footer.html' %}
             <!-- Spacer for margin below the footer box -->
             <tr>
               <td height="24" style="line-height: 24px; font-size: 1px">
@@ -190,3 +98,4 @@
     </table>
   </body>
 </html>
+
