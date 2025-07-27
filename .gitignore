@@ -1,0 +1,7 @@
+# VS Code and PyCharm IDE settings
+.vscode/
+.idea/
+*.iml
+
+# macOS
+**/.DS_Store
