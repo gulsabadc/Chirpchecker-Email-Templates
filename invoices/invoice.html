@@ -19,7 +19,7 @@
         color: #000000;
         background: #ffffff;
         padding: 60px 40px;
-        font-size: 14px;
+        letter-spacing: -2%;
       }
 
       .container {
@@ -33,11 +33,11 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
       }
 
       .logo-image {
-        width: 80px;
+        width: 279px;
         height: auto;
       }
 
@@ -49,15 +49,7 @@
         align-items: center;
       }
 
-      .logo-am {
-        color: #2a5b20;
-      }
-      .logo-credible {
-        color: #2a5b20;
-      }
-      .logo-i {
-        color: #367bff;
-      }
+     
 
       /* Invoice Header */
       .invoice-header {
@@ -65,28 +57,24 @@
       }
 
       .invoice-title {
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 700;
         color: #000000;
         margin-bottom: 24px;
       }
 
       .invoice-details {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
+        font-size: 13px;
+        color: #000000;
+        font-weight: 500;
       }
 
-      .invoice-detail {
-        font-size: 16px;
-        color: #374151;
-      }
-
-      /* Sender and Recipient */
+      
+      /* Company and Bill To Information */
       .address-section {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
       }
 
       .address-block {
@@ -98,16 +86,16 @@
       }
 
       .address-title {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 700;
         color: #000000;
         margin-bottom: 16px;
       }
 
       .address-content {
-        font-size: 16px;
-        color: #374151;
-        line-height: 1.6;
+        font-size: 13px;
+        color: #000000;
+        font-weight: 500;
       }
 
       /* Amount Due */
@@ -117,8 +105,8 @@
       }
 
       .amount-text {
-        font-size: 24px;
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 700;
         color: #000000;
       }
 
@@ -135,10 +123,10 @@
       .invoice-table th {
         text-align: left;
         padding: 16px 0;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
-        color: #6b7280;
-        border-bottom: 2px solid #d1d5db;
+        color: #000000;
+        border-bottom: 1px solid #000000;
       }
 
       /* Horizontal line after table header */
@@ -157,9 +145,10 @@
       }
 
       .invoice-table td {
-        padding: 16px 0;
-        font-size: 16px;
+        padding: 12px 0;
+        font-size: 13px;
         color: #000000;
+        font-weight: 500;
       }
 
       .invoice-table td:nth-child(2) {
@@ -178,17 +167,17 @@
       .plan-name {
         font-weight: 500;
         margin-bottom: 4px;
+        font-size: 13px;
       }
 
       .plan-period {
-        font-size: 14px;
-        color: #6b7280;
+        font-size: 13px;
+        color: #000000;
+        font-weight: 500;
       }
-
       /* Horizontal line after amount due */
       .amount-divider {
-        border-bottom: 1px solid #e5e7eb;
-        margin: 20px 0;
+        border-top: 0.8px solid #E4E4E4;
       }
 
       /* Summary Section */
@@ -199,42 +188,38 @@
       }
 
       .summary-table {
-        width: 300px;
+        width: 70%;
         border-collapse: collapse;
       }
 
       .summary-table td {
-        padding: 8px 0;
-        font-size: 16px;
+        padding: 5px 0;
+        font-size: 13px;
       }
 
       .summary-table td:first-child {
         text-align: left;
-        color: #374151;
+        color: #000000;
+        font-weight: 500;
+        font-size: 13px;
       }
 
       .summary-table td:last-child {
         text-align: right;
         color: #000000;
+        font-weight: 500;
+        font-size: 13px;
       }
 
       .summary-divider {
-        border-bottom: 1px solid #e5e7eb;
-        height: 1px;
-        margin: 8px 0;
+        border-top: 0.8px solid #e4e4e4;
       }
 
       .total-row td {
-        font-weight: 600;
-        font-size: 18px;
-        padding: 8px 0;
-      }
-
-      .total-row td:last-child {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 4px;
+        font-weight: 700 !important ;
+        font-size: 14px !important;
+        padding: 8px 0 8px 0 !important;
+        color: #000000;
       }
 
       /* Page height fix */
@@ -273,14 +258,11 @@
       <!-- Logo Section -->
       <div class="logo-section">
         <img
-          src="file://{{ logo_url }}"
+          src="../images/web-logo.png"
           alt="AmICredible Logo"
           class="logo-image"
         />
-        <div class="logo-text">
-          <span class="logo-am">Am</span><span class="logo-i">I</span
-          ><span class="logo-credible">Credible</span>
-        </div>
+       
       </div>
 
       <!-- Invoice Header -->
